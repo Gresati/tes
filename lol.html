@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Assessment Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <button class="tab">Question</button>
+            <button class="tab active">Table</button>
+            <button class="tab">History</button>
+        </header>
+
+        <div class="content">
+            <div class="table-info">
+                <div class="table-names">
+                    <h3>Table Name</h3>
+                    <ul>
+                        <li>Table Overview</li>
+                        <li>departments</li>
+                        <li>employees</li>
+                        <li>projects</li>
+                    </ul>
+                </div>
+                <div class="table-records">
+                    <h3>Records</h3>
+                    <ul>
+                        <li>3</li>
+                        <li>3</li>
+                        <li>5</li>
+                        <li>3</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="table-overview">
+                <h3>Table Overview</h3>
+                <div class="table-section">
+                    <h4>departments:</h4>
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type Data</th>
+                        </tr>
+                        <tr>
+                            <td>id</td>
+                            <td>int</td>
+                        </tr>
+                        <tr>
+                            <td>name</td>
+                            <td>varchar</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="table-section">
+                    <h4>employees:</h4>
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type Data</th>
+                        </tr>
+                        <tr>
+                            <td>id</td>
+                            <td>int</td>
+                        </tr>
+                        <tr>
+                            <td>name</td>
+                            <td>varchar</td>
+                        </tr>
+                        <tr>
+                            <td>department_id</td>
+                            <td>int</td>
+                        </tr>
+                        <tr>
+                            <td>salary</td>
+                            <td>decimal</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="table-section">
+                    <h4>projects:</h4>
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type Data</th>
+                        </tr>
+                        <tr>
+                            <td>id</td>
+                            <td>int</td>
+                        </tr>
+                        <tr>
+                            <td>name</td>
+                            <td>varchar</td>
+                        </tr>
+                        <tr>
+                            <td>department_id</td>
+                            <td>int</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="sql-section">
+                <h3>SQL</h3>
+                <textarea rows="10"></textarea>
+            </div>
+            <div class="expected-output">
+                <h3>Expected Output</h3>
+                <div class="output"></div>
+            </div>
+            <div class="actions">
+                <button>Run Test</button>
+                <div class="pagination">
+                    <button>Soal 1</button>
+                    <button>Soal 2</button>
+                    <button>Soal 3</button>
+                    <button>Soal 4</button>
+                </div>
+                <button>Next</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
